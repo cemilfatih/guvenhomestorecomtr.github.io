@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Güven Home Store Web">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <title>Guven Home Store</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add your meta tags, stylesheets, or other head elements here -->
+</head>
+
+<body>
+<div id="splash-screen" style="text-align: center; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <!-- Add your logo image here -->
+  <div>
+  <img src="img/guvenStore_logo.png" alt="Guven Store Logo" style="max-width: 50%; max-height: 50%;">
+  </div>
+  <!-- Your Splash Screen Content -->
+</div>
+
+<!-- Your existing content, including the script tag for Dart -->
+<script defer src="main.dart.js" type="application/javascript"></script>
+
+<script>
+    // Your existing script tag
+    // ...
+
+    // Add the following script to hide the splash screen after initialization
+    window.onload = function () {
+      // Simulate initialization by delaying for a few seconds
+      setTimeout(function () {
+        document.getElementById('splash-screen').style.display = 'none';
+      }, 2000); // Adjust the delay as needed
+    };
+  </script>
+</body>
+
+</html>
